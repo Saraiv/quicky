@@ -1,0 +1,33 @@
+[
+  {
+    "name":"default",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "",
+    "password": "",
+    "database":"",
+    "entities": [
+      "./src/modules/**/infra/typeorm/entities/{*.ts, *.js}"
+    ],
+    "migrations": [
+      "./src/shared/infra/typeorm/migrations/{*.ts, *.js}"
+    ],
+    "cli": {
+      "migrationsDir":  "./src/shared/infra/typeorm/migrations"
+    }
+  },
+  {
+    "name":"mongo",
+    "type": "mongodb",
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database":"mongodb",
+    "useUnifiedTopology": true,
+    "entities": [
+      "./src/modules/**/infra/typeorm/schemas/*.ts"
+    ]
+
+  }
+
+]

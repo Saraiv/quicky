@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+node_modules/
+build/
+temp/
+.env
+dist
+tmp/*
+!tmp/.gitkeep
+ormconfig_prod.json
+ormconfig_dev.json
+ormconfig.json
+*.sh
+coverage/
+generateAndMigrate.sh
+createMigrations.sh
